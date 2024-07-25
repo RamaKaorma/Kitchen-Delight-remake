@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CZ:wght@100..400&display=swap');
+
+:root {
+  --font-base: "Playwrite CZ", cursive;
+
+  --primary-color: #E7E7E7;
+  --secondary-color: #F24C00;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --blue-color: #485696;
+  --yellow-color: #F9C784;
+  --white-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}

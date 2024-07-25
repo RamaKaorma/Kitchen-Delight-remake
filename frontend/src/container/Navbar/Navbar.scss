@@ -1,0 +1,60 @@
+.app__navbar {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: absolute;
+    // position: -webkit-sticky;
+    z-index: 2;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+
+    .app__navbar-logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    
+        h6 {
+            margin: 0.5rem;
+            font-size: 1rem;
+            font-family: var(--font-base);
+            color: #DBAD4A;
+            font-weight: 700;
+        }
+    
+        @media screen and (min-width: 2000px) {
+            width: 180px;
+        }
+    }
+
+    .app__navbar-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
+
+        li {
+            margin: 0.5rem;
+
+            a {
+                text-decoration: none;
+                text-transform: capitalize;
+                font-size: 1.3rem;
+                color: #DF8453;
+                font-weight: 800;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    color: #17494D;
+                }
+            }
+        }
+    }
+}
+

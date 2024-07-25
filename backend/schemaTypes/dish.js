@@ -16,12 +16,30 @@ export const dish = defineType(
             type:'string'
         }),
         defineField({
+            name: 'imgUrl',
+            title: 'ImageUrl',
+            type: 'image',
+            options: {
+              hotspot: true,
+            },
+        }),
+        defineField({
             name:'ingredients',
             title:'Ingredients',
             type:'array',
             of: [{
                 name:'ingredient',
                 title:'Ingredient',
+                type:'string'
+            }]
+        }),
+        defineField({
+            name:'tags',
+            title:'Tags',
+            type:'array',
+            of: [{
+                name:'category',
+                title:'Category',
                 type:'string'
             }]
         })]
